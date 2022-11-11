@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @yogeshwaran4
-- 👀 I’m interested in python coding
+- 👀 I’m interested in java coding
 - 🌱 I’m currently learning B.E
 - 📫 How to reach me yogeshwaranponvel@gmail.com
 - 😜😝😜
