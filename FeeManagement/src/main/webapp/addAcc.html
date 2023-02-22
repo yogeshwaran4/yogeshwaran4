@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<a href = "adminIndex.html">Home</a> ||
+<a href = "addAcc.html">Add Accountant</a> ||
+<a href = "ViewAccountant">View Accountants</a> ||
+<a href = "AdminLogout">Logout</a>
+
+<h2>Register form</h2>
+
+
+<form action="addAccountant" method = "post" enctype="multipart/form-data">
+Upload Photo :<input type ="file" name ="file" > or <input type="text" name="fileUrl"><br>
+Enter Accountant Id : <input type="text" name = "id" required="required"><br>
+Enter Username : <input type="text" name = "username"required="required"><br>
+Enter Name : <input type="text" name = "name"required="required"><br>
+Enter email : <input type="text" name = "email"required="required"><br>
+Enter contact : <input type="text" name = "contact"required="required"><br>
+Enter password : <input type="password" name = "password"required="required"><br>
+Re-enter password:<input type="password" name="re_enter_pass"required="required"><br>
+<input type ="submit" name ="Register">
+
+</form>
+
+</body>
+</html>

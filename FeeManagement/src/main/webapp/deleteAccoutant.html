@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body onload="getCsrf()">
+	<form action="DeleteAccount" method=post>
+		Enter Acc id : <input type="text" name="id"> <input
+			type="hidden" name=csrf value="" id="csrfToken"> <input
+			type="submit" value="Delete">
+	</form>
+
+
+	<script>
+		function getCsrf() {
+			let name = "csrfCookie=";
+			let decodedCookie = decodeURIComponent(document.cookie);
+			let ca = decodedCookie.split(';');
+			for (let i = 0; i < ca.length; i++) {
+				let c = ca[i];
+				while (c.charAt(0) == ' ') {
+					c = c.substring(1);
+				}
+				if (c.indexOf(name) == 0) {
+					document.getElementById("csrfToken").setAttribute('value',c.substring(name.length, c.length));
+				}
+			}
+		}
+	</script>
+
+</body>
+</html>
